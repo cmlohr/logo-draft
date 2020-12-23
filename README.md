@@ -1,1 +1,1 @@
-logo-draft
+First draft of my logo.

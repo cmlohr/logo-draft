@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway&display=swap');
+
+html,
+body {
+  margin: 0;
+	background: #191919;
+	width: 100%;
+	height: 100%;
+}
+.brackets {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+h1 {
+	font-size: 14vw;
+	line-height: 1;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  letter-spacing: -1.2rem;
+}
+
+.left {
+  color: #191919;
+  font-family: 'Raleway', sans-serif;
+  text-shadow:
+   -1px -1px 0 #119822,
+    1px -1px 0 #119822,
+    -1px 1px 0 #119822,
+     1px 1px 0 #119822;
+}
+
+.right {
+  color: #191919;
+  font-family: 'Raleway', sans-serif;
+  text-shadow:
+   -1px -1px 0 #119822,
+    1px -1px 0 #119822,
+    -1px 1px 0 #119822,
+     1px 1px 0 #119822;
+}
+
+.initial {
+		content: attr(data-heading);
+    font-family: 'Comfortaa', cursive;
+		overflow: hidden;
+		color: #119822;
+		width: 100%;
+		animation: flicker 9s linear infinite;
+	}
+
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 50%, 64.999%, 70%, 100% {
+		opacity: .99;
+		text-shadow: -1px -1px 0 #14CC60, 1px -1px 0 #14CC60, -1px 1px 0 #14CC60, 1px 1px 0 #14CC60, 0 -2px 5px, 0 0 2px, 0 0 5px #eeeeee, 0 0 12px #B3BFB8, 0 0 1px #eeeeee;
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
